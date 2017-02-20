@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Hornbill BLE
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--
+  <button ion-button (click)="startScanning()">Start Scan </button>
+-->
+  <ion-card *ngFor="let device of devices" (click) = "selectDevice(device.id)" >
+    <ion-card-header>
+      <ion-icon name="bluetooth" item-left> </ion-icon>
+      {{ device.name }}
+    </ion-card-header>
+
+    <ion-card-content>
+      <p><small> ID:{{ device.id   }}   </small> </p>
+      <p><small> RSSI:{{ device.rssi }}db </small></p>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

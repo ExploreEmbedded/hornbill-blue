@@ -1,0 +1,22 @@
+<!--
+  Generated template for the Lights page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lights Control</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h1>Set Colors </h1>
+  <ion-list>
+      <ion-item>
+        <ion-range [(ngModel)]="singleValue" color="danger" pin="true"></ion-range>
+      </ion-item>
+  </ion-list>
+</ion-content>
