@@ -4,3 +4,9 @@ BLE app with Robo Controller, IO, UART, RGB Lights controller etc.,
 
 
 <b>Only the source code is available here, to use it. You'll need to set up an ionic2 project, ensure that it builds and than replace the src folder in there.</b>
+ESP32 have inbuild BLE Chip
+For BLE Serial monitoring 
+#include<BluetoothSerial.h> //Library
+BluetoothSerial SerialBT;
+SerialBT.begin("ESP32test"); //Bluetooth device name
+SerialBT.println();
